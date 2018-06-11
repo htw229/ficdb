@@ -1,5 +1,12 @@
-from django.shortcuts import render
+import django.shortcuts
+
 
 # Create your views here.
 def robotstxt(request):
-    return render(request, 'robots.txt')
+    """
+    This will serve the robots.txt file located in the static folder.
+
+    :param request:
+    :return:
+    """
+    return django.shortcuts.render(request, 'robots.txt')
